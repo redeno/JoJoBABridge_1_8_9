@@ -33,6 +33,10 @@ minecraft {
     runDir = "run"
     
     mappings = "stable_22"
+    
+    // Исправляем проблемы с современными версиями Gradle
+    replaceIn "ChatBridgeMod.java"
+    replace "@VERSION@", project.version
 }
 
 repositories {
@@ -44,7 +48,7 @@ repositories {
 }
 
 dependencies {
-
+    // Никаких дополнительных зависимостей не требуется
 }
 
 processResources {

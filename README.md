@@ -12,6 +12,17 @@
 
 ## 🚀 Быстрая сборка
 
+### Если у вас Gradle 8+ (современные версии):
+```bash
+./fix-gradle.sh
+```
+Затем используйте созданный wrapper:
+```bash
+./gradlew setupDecompWorkspace
+./gradlew build
+```
+
+### Если у вас старая версия Gradle или Java 8:
 ```bash
 ./build-mod.sh
 ```

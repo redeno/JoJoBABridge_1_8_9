@@ -8,6 +8,18 @@
 
 ## Сборка мода
 
+### 🔧 Исправление проблем с Gradle 8+
+
+Если вы получаете ошибку "Using insecure protocols with repositories", выполните:
+
+```bash
+./fix-gradle.sh
+```
+
+Это создаст совместимый Gradle Wrapper и настройки.
+
+### 📦 Сборка
+
 1. **Клонирование репозитория:**
    ```bash
    git clone <repository-url>
@@ -25,11 +37,25 @@
    ```
 
 3. **Настройка рабочего пространства:**
+   
+   **Для современных версий Gradle (после исправления):**
+   ```bash
+   ./gradlew setupDecompWorkspace
+   ```
+   
+   **Для старых версий или Java 8:**
    ```bash
    gradle-2.14/bin/gradle setupDecompWorkspace
    ```
 
 4. **Сборка мода:**
+   
+   **Для современных версий Gradle:**
+   ```bash
+   ./gradlew build
+   ```
+   
+   **Для старых версий или Java 8:**
    ```bash
    gradle-2.14/bin/gradle build
    ```
