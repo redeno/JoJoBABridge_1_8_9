@@ -1,0 +1,9 @@
+Symbol range map extraction starting
+Processing 7 files
+processing com/bridgemod/chatbridge/ChatBridgeMod.java
+processing com/bridgemod/chatbridge/chat/BridgeChatManager.java
+processing com/bridgemod/chatbridge/command/BridgeChatCommand.java
+processing com/bridgemod/chatbridge/command/BridgeCommand.java
+processing com/bridgemod/chatbridge/config/ConfigManager.java
+processing com/bridgemod/chatbridge/gui/BridgeGui.java
+processing com/bridgemod/chatbridge/network/NetworkHandler.java

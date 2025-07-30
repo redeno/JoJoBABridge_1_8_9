@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chatbridge",
+  "name": "Chat Bridge Mod",
+  "description": "Allows players with this mod to communicate in a separate bridge chat channel",
+  "version": "1.0.0",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["BridgeMod"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

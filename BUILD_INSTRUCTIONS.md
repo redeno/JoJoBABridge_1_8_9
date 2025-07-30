@@ -14,20 +14,32 @@
    cd chatbridge-mod
    ```
 
-2. **Сборка мода:**
+2. **Установка Java 8 (обязательно!):**
    ```bash
-   ./gradlew build
-   ```
+   # Ubuntu/Debian
+   sudo apt install openjdk-8-jdk
    
-   Или на Windows:
-   ```cmd
-   gradlew.bat build
+   # Установка переменных окружения
+   export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+   export PATH=$JAVA_HOME/bin:$PATH
    ```
 
-3. **Готовый мод будет находиться в:**
+3. **Настройка рабочего пространства:**
+   ```bash
+   gradle-2.14/bin/gradle setupDecompWorkspace
+   ```
+
+4. **Сборка мода:**
+   ```bash
+   gradle-2.14/bin/gradle build
+   ```
+
+5. **Готовый мод будет находиться в:**
    ```
    build/libs/chatbridge-1.0.0.jar
    ```
+
+**Важно:** Для Minecraft 1.8.9 обязательно использовать Java 8!
 
 ## Установка
 

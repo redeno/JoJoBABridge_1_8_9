@@ -1,0 +1,568 @@
+Symbol range map extraction starting
+Processing 7 files
+processing com/bridgemod/chatbridge/ChatBridgeMod.java
+@|com/bridgemod/chatbridge/ChatBridgeMod.java|8|32|com.bridgemod.chatbridge|package|com.bridgemod.chatbridge|(file)
+Class Start: com.bridgemod.chatbridge.ChatBridgeMod
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|637|643|String|class|java.lang.String
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|644|649|MODID|field|com.bridgemod.chatbridge.ChatBridgeMod|MODID|
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|690|696|String|class|java.lang.String
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|697|704|VERSION|field|com.bridgemod.chatbridge.ChatBridgeMod|VERSION|
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|764|777|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|778|786|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance|
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|805|818|ConfigManager|class|com.bridgemod.chatbridge.config.ConfigManager
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|819|832|configManager|field|com.bridgemod.chatbridge.ChatBridgeMod|configManager|
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|846|860|NetworkHandler|class|com.bridgemod.chatbridge.network.NetworkHandler
+   @|com/bridgemod/chatbridge/ChatBridgeMod.java|861|875|networkHandler|field|com.bridgemod.chatbridge.ChatBridgeMod|networkHandler|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|920|927|preInit|method|com.bridgemod.chatbridge.ChatBridgeMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|928|953|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|954|959|event|param|com.bridgemod.chatbridge.ChatBridgeMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|971|984|configManager|field|com.bridgemod.chatbridge.ChatBridgeMod|configManager
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|991|1004|ConfigManager|class|com.bridgemod.chatbridge.config.ConfigManager
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1005|1010|event|param|com.bridgemod.chatbridge.ChatBridgeMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1011|1039|getModConfigurationDirectory|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getModConfigurationDirectory|()Ljava/io/File;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1052|1066|networkHandler|field|com.bridgemod.chatbridge.ChatBridgeMod|networkHandler
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1073|1087|NetworkHandler|class|com.bridgemod.chatbridge.network.NetworkHandler
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1140|1144|init|method|com.bridgemod.chatbridge.ChatBridgeMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1145|1167|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1168|1173|event|param|com.bridgemod.chatbridge.ChatBridgeMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1185|1205|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1206|1214|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1215|1230|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1235|1248|BridgeCommand|class|com.bridgemod.chatbridge.command.BridgeCommand
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1261|1281|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1282|1290|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1291|1306|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1311|1328|BridgeChatCommand|class|com.bridgemod.chatbridge.command.BridgeChatCommand
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: getConfigManager()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1369|1385|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1355|1368|ConfigManager|class|com.bridgemod.chatbridge.config.ConfigManager
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1405|1418|configManager|field|com.bridgemod.chatbridge.ChatBridgeMod|configManager
+   Method End: getConfigManager()Lcom/bridgemod/chatbridge/config/ConfigManager;
+   Method Start: getNetworkHandler()Lcom/bridgemod/chatbridge/network/NetworkHandler;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1457|1474|getNetworkHandler|method|com.bridgemod.chatbridge.ChatBridgeMod|getNetworkHandler|()Lcom/bridgemod/chatbridge/network/NetworkHandler;
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1442|1456|NetworkHandler|class|com.bridgemod.chatbridge.network.NetworkHandler
+      @|com/bridgemod/chatbridge/ChatBridgeMod.java|1494|1508|networkHandler|field|com.bridgemod.chatbridge.ChatBridgeMod|networkHandler
+   Method End: getNetworkHandler()Lcom/bridgemod/chatbridge/network/NetworkHandler;
+Class End  : com.bridgemod.chatbridge.ChatBridgeMod
+endProcessing com/bridgemod/chatbridge/ChatBridgeMod.java
+
+processing com/bridgemod/chatbridge/chat/BridgeChatManager.java
+@|com/bridgemod/chatbridge/chat/BridgeChatManager.java|8|37|com.bridgemod.chatbridge.chat|package|com.bridgemod.chatbridge.chat|(file)
+Class Start: com.bridgemod.chatbridge.chat.BridgeChatManager
+   @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|572|578|String|class|java.lang.String
+   @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|579|592|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX|
+   @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|624|630|String|class|java.lang.String
+   @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|619|623|List|class|java.util.List
+   @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|632|646|bridgeMessages|field|com.bridgemod.chatbridge.chat.BridgeChatManager|bridgeMessages|
+   Method Start: BridgeChatManager()V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|664|681|BridgeChatManager|method|com.bridgemod.chatbridge.chat.BridgeChatManager|BridgeChatManager|()V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|699|713|bridgeMessages|field|com.bridgemod.chatbridge.chat.BridgeChatManager|bridgeMessages
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|720|729|ArrayList|class|java.util.ArrayList
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|743|757|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|758|767|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|768|776|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: BridgeChatManager()V
+   Method Start: onChatReceived(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|865|879|onChatReceived|method|com.bridgemod.chatbridge.chat.BridgeChatManager|onChatReceived|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|880|903|ClientChatReceivedEvent|class|net.minecraftforge.client.event.ClientChatReceivedEvent
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|904|909|event|param|com.bridgemod.chatbridge.chat.BridgeChatManager|onChatReceived|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|921|927|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|938|943|event|param|com.bridgemod.chatbridge.chat.BridgeChatManager|onChatReceived|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|944|951|message|field|net.minecraftforge.client.event.ClientChatReceivedEvent|message
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|952|970|getUnformattedText|method|net.minecraft.util.IChatComponent|getUnformattedText|()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1059|1069|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1070|1083|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1105|1118|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1119|1127|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1128|1144|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1147|1166|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1247|1252|event|param|com.bridgemod.chatbridge.chat.BridgeChatManager|onChatReceived|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1253|1264|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1369|1375|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1400|1409|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1410|1423|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1424|1430|length|method|java.lang.CharSequence|length|()I
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1434|1438|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1458|1475|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1493|1510|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1532|1550|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1551|1555|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1558|1571|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1601|1619|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1620|1625|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1677|1682|event|param|com.bridgemod.chatbridge.chat.BridgeChatManager|onChatReceived|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1683|1690|message|field|net.minecraftforge.client.event.ClientChatReceivedEvent|message
+   Method End: onChatReceived(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+   Method Start: sendBridgeMessage(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1756|1773|sendBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|sendBridgeMessage|(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1774|1780|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1781|1788|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|sendBridgeMessage|(Ljava/lang/String;)V|message|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1805|1818|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1819|1827|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1828|1844|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1847|1866|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1919|1925|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1939|1948|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1949|1961|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1964|1973|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1974|1981|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|1993|1999|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2019|2032|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2062|2069|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|sendBridgeMessage|(Ljava/lang/String;)V|message|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2128|2142|bridgeMessages|field|com.bridgemod.chatbridge.chat.BridgeChatManager|bridgeMessages
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2143|2146|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2259|2268|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2269|2281|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2284|2293|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2294|2309|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2412|2432|displayBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2445|2452|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|sendBridgeMessage|(Ljava/lang/String;)V|message|0
+   Method End: sendBridgeMessage(Ljava/lang/String;)V
+   Method Start: receiveBridgeMessage(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2488|2508|receiveBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|receiveBridgeMessage|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2509|2515|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2516|2526|playerName|param|com.bridgemod.chatbridge.chat.BridgeChatManager|receiveBridgeMessage|(Ljava/lang/String;Ljava/lang/String;)V|playerName|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2528|2534|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2535|2542|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|receiveBridgeMessage|(Ljava/lang/String;Ljava/lang/String;)V|message|1
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2558|2571|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2572|2580|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2581|2597|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2600|2619|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2637|2657|displayBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2658|2668|playerName|param|com.bridgemod.chatbridge.chat.BridgeChatManager|receiveBridgeMessage|(Ljava/lang/String;Ljava/lang/String;)V|playerName|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2670|2677|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|receiveBridgeMessage|(Ljava/lang/String;Ljava/lang/String;)V|message|1
+   Method End: receiveBridgeMessage(Ljava/lang/String;Ljava/lang/String;)V
+   Method Start: displayBridgeMessage(Ljava/lang/String;Ljava/lang/String;Z)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2725|2745|displayBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2746|2752|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2753|2763|playerName|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|playerName|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2765|2771|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2772|2779|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|message|1
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2789|2801|isOwnMessage|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|isOwnMessage|2
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2813|2830|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2849|2866|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2915|2932|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2946|2963|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|2964|2977|BRIDGE_PREFIX|field|com.bridgemod.chatbridge.chat.BridgeChatManager|BRIDGE_PREFIX
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3001|3013|getChatStyle|method|net.minecraft.util.IChatComponent|getChatStyle|()Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3016|3024|setColor|method|net.minecraft.util.ChatStyle|setColor|(Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3025|3043|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3044|3048|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3071|3084|appendSibling|method|net.minecraft.util.IChatComponent|appendSibling|(Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3133|3150|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3171|3188|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3195|3205|playerName|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|playerName|0
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3237|3249|getChatStyle|method|net.minecraft.util.IChatComponent|getChatStyle|()Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3252|3260|setColor|method|net.minecraft.util.ChatStyle|setColor|(Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3261|3273|isOwnMessage|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|isOwnMessage|2
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3276|3294|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3295|3300|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3303|3321|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3322|3328|YELLOW|field|net.minecraft.util.EnumChatFormatting|YELLOW
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3351|3364|appendSibling|method|net.minecraft.util.IChatComponent|appendSibling|(Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3419|3436|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3460|3477|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3478|3485|message|param|com.bridgemod.chatbridge.chat.BridgeChatManager|displayBridgeMessage|(Ljava/lang/String;Ljava/lang/String;Z)V|message|1
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3513|3525|getChatStyle|method|net.minecraft.util.IChatComponent|getChatStyle|()Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3528|3536|setColor|method|net.minecraft.util.ChatStyle|setColor|(Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3537|3555|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3556|3561|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3584|3597|appendSibling|method|net.minecraft.util.IChatComponent|appendSibling|(Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3634|3643|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3644|3656|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3659|3668|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3669|3679|getChatGUI|method|net.minecraft.client.gui.GuiIngame|getChatGUI|()Lnet/minecraft/client/gui/GuiNewChat;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3682|3698|printChatMessage|method|net.minecraft.client.gui.GuiNewChat|printChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+   Method End: displayBridgeMessage(Ljava/lang/String;Ljava/lang/String;Z)V
+   Method Start: getBridgeMessages()Ljava/util/List;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3748|3765|getBridgeMessages|method|com.bridgemod.chatbridge.chat.BridgeChatManager|getBridgeMessages|()Ljava/util/List;
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3740|3746|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3735|3739|List|class|java.util.List
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3789|3798|ArrayList|class|java.util.ArrayList
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3801|3815|bridgeMessages|field|com.bridgemod.chatbridge.chat.BridgeChatManager|bridgeMessages
+   Method End: getBridgeMessages()Ljava/util/List;
+   Method Start: clearBridgeMessages()V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3845|3864|clearBridgeMessages|method|com.bridgemod.chatbridge.chat.BridgeChatManager|clearBridgeMessages|()V
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3877|3891|bridgeMessages|field|com.bridgemod.chatbridge.chat.BridgeChatManager|bridgeMessages
+      @|com/bridgemod/chatbridge/chat/BridgeChatManager.java|3892|3897|clear|method|java.util.Collection|clear|()V
+   Method End: clearBridgeMessages()V
+Class End  : com.bridgemod.chatbridge.chat.BridgeChatManager
+endProcessing com/bridgemod/chatbridge/chat/BridgeChatManager.java
+
+processing com/bridgemod/chatbridge/command/BridgeChatCommand.java
+@|com/bridgemod/chatbridge/command/BridgeChatCommand.java|8|40|com.bridgemod.chatbridge.command|package|com.bridgemod.chatbridge.command|(file)
+Class Start: com.bridgemod.chatbridge.command.BridgeChatCommand
+   Method Start: getCommandName()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|466|480|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|459|465|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|549|564|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|542|548|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|565|579|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|580|586|sender|param|com.bridgemod.chatbridge.command.BridgeChatCommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|698|724|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|788|802|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|848|864|CommandException|class|net.minecraft.command.CommandException
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|803|817|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|818|824|sender|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|826|832|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|835|839|args|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|880|893|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|894|902|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|903|919|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|922|941|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|959|965|sender|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|966|980|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|985|1002|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1020|1038|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1039|1042|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1156|1160|args|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1188|1194|sender|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1195|1209|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1214|1231|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1249|1267|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1268|1271|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1357|1363|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1374|1380|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1381|1385|join|method|java.lang.String|join|(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1391|1395|args|param|com.bridgemod.chatbridge.command.BridgeChatCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1406|1419|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1420|1428|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1429|1446|getNetworkHandler|method|com.bridgemod.chatbridge.ChatBridgeMod|getNetworkHandler|()Lcom/bridgemod/chatbridge/network/NetworkHandler;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1449|1466|sendBridgeMessage|method|com.bridgemod.chatbridge.network.NetworkHandler|sendBridgeMessage|(Ljava/lang/String;)V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1526|1549|addTabCompletionOptions|method|net.minecraft.command.ICommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1518|1524|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1513|1517|List|class|java.util.List
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1550|1564|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1565|1571|sender|param|com.bridgemod.chatbridge.command.BridgeChatCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1573|1579|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1582|1586|args|param|com.bridgemod.chatbridge.command.BridgeChatCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1588|1596|BlockPos|class|net.minecraft.util.BlockPos
+      @|com/bridgemod/chatbridge/command/BridgeChatCommand.java|1597|1600|pos|param|com.bridgemod.chatbridge.command.BridgeChatCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|pos|2
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+Class End  : com.bridgemod.chatbridge.command.BridgeChatCommand
+endProcessing com/bridgemod/chatbridge/command/BridgeChatCommand.java
+
+processing com/bridgemod/chatbridge/command/BridgeCommand.java
+@|com/bridgemod/chatbridge/command/BridgeCommand.java|8|40|com.bridgemod.chatbridge.command|package|com.bridgemod.chatbridge.command|(file)
+Class Start: com.bridgemod.chatbridge.command.BridgeCommand
+   Method Start: getCommandName()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|457|471|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|450|456|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|544|559|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|537|543|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|560|574|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|575|581|sender|param|com.bridgemod.chatbridge.command.BridgeCommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getRequiredPermissionLevel()I
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|686|712|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|776|790|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|836|852|CommandException|class|net.minecraft.command.CommandException
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|791|805|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|806|812|sender|param|com.bridgemod.chatbridge.command.BridgeCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|814|820|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|823|827|args|param|com.bridgemod.chatbridge.command.BridgeCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|867|876|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|877|889|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|892|900|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|924|933|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|934|946|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|949|965|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|970|979|BridgeGui|class|com.bridgemod.chatbridge.gui.BridgeGui
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1043|1066|addTabCompletionOptions|method|net.minecraft.command.ICommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1035|1041|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1030|1034|List|class|java.util.List
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1067|1081|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1082|1088|sender|param|com.bridgemod.chatbridge.command.BridgeCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1090|1096|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1099|1103|args|param|com.bridgemod.chatbridge.command.BridgeCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1105|1113|BlockPos|class|net.minecraft.util.BlockPos
+      @|com/bridgemod/chatbridge/command/BridgeCommand.java|1114|1117|pos|param|com.bridgemod.chatbridge.command.BridgeCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|pos|2
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+Class End  : com.bridgemod.chatbridge.command.BridgeCommand
+endProcessing com/bridgemod/chatbridge/command/BridgeCommand.java
+
+processing com/bridgemod/chatbridge/config/ConfigManager.java
+@|com/bridgemod/chatbridge/config/ConfigManager.java|8|39|com.bridgemod.chatbridge.config|package|com.bridgemod.chatbridge.config|(file)
+Class Start: com.bridgemod.chatbridge.config.ConfigManager
+   @|com/bridgemod/chatbridge/config/ConfigManager.java|161|174|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com/bridgemod/chatbridge/config/ConfigManager.java|175|181|config|field|com.bridgemod.chatbridge.config.ConfigManager|config|
+   @|com/bridgemod/chatbridge/config/ConfigManager.java|203|220|bridgeChatEnabled|field|com.bridgemod.chatbridge.config.ConfigManager|bridgeChatEnabled|
+   Method Start: ConfigManager(Ljava/io/File;)V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|238|251|ConfigManager|method|com.bridgemod.chatbridge.config.ConfigManager|ConfigManager|(Ljava/io/File;)V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|252|256|File|class|java.io.File
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|257|266|configDir|param|com.bridgemod.chatbridge.config.ConfigManager|ConfigManager|(Ljava/io/File;)V|configDir|0
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|278|282|File|class|java.io.File
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|300|304|File|class|java.io.File
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|305|314|configDir|param|com.bridgemod.chatbridge.config.ConfigManager|ConfigManager|(Ljava/io/File;)V|configDir|0
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|343|349|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|356|369|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|391|401|loadConfig|method|com.bridgemod.chatbridge.config.ConfigManager|loadConfig|()V
+   Method End: ConfigManager(Ljava/io/File;)V
+   Method Start: loadConfig()V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|433|443|loadConfig|method|com.bridgemod.chatbridge.config.ConfigManager|loadConfig|()V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|456|462|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|463|467|load|method|net.minecraftforge.common.config.Configuration|load|()V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|488|505|bridgeChatEnabled|field|com.bridgemod.chatbridge.config.ConfigManager|bridgeChatEnabled
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|508|514|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|515|525|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|632|638|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|639|649|hasChanged|method|net.minecraftforge.common.config.Configuration|hasChanged|()Z
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|667|673|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|674|678|save|method|net.minecraftforge.common.config.Configuration|save|()V
+   Method End: loadConfig()V
+   Method Start: saveConfig()V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|719|729|saveConfig|method|com.bridgemod.chatbridge.config.ConfigManager|saveConfig|()V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|742|748|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|749|752|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|792|795|set|method|net.minecraftforge.common.config.Property|set|(Z)V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|796|813|bridgeChatEnabled|field|com.bridgemod.chatbridge.config.ConfigManager|bridgeChatEnabled
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|824|830|config|field|com.bridgemod.chatbridge.config.ConfigManager|config
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|831|835|save|method|net.minecraftforge.common.config.Configuration|save|()V
+   Method End: saveConfig()V
+   Method Start: isBridgeChatEnabled()Z
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|869|888|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|908|925|bridgeChatEnabled|field|com.bridgemod.chatbridge.config.ConfigManager|bridgeChatEnabled
+   Method End: isBridgeChatEnabled()Z
+   Method Start: setBridgeChatEnabled(Z)V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|954|974|setBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|setBridgeChatEnabled|(Z)V
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|983|990|enabled|param|com.bridgemod.chatbridge.config.ConfigManager|setBridgeChatEnabled|(Z)V|enabled|0
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|1007|1024|bridgeChatEnabled|field|com.bridgemod.chatbridge.config.ConfigManager|bridgeChatEnabled
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|1027|1034|enabled|param|com.bridgemod.chatbridge.config.ConfigManager|setBridgeChatEnabled|(Z)V|enabled|0
+      @|com/bridgemod/chatbridge/config/ConfigManager.java|1044|1054|saveConfig|method|com.bridgemod.chatbridge.config.ConfigManager|saveConfig|()V
+   Method End: setBridgeChatEnabled(Z)V
+Class End  : com.bridgemod.chatbridge.config.ConfigManager
+endProcessing com/bridgemod/chatbridge/config/ConfigManager.java
+
+processing com/bridgemod/chatbridge/gui/BridgeGui.java
+@|com/bridgemod/chatbridge/gui/BridgeGui.java|8|36|com.bridgemod.chatbridge.gui|package|com.bridgemod.chatbridge.gui|(file)
+Class Start: com.bridgemod.chatbridge.gui.BridgeGui
+   @|com/bridgemod/chatbridge/gui/BridgeGui.java|335|353|BridgeToggleButton|class|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton
+   @|com/bridgemod/chatbridge/gui/BridgeGui.java|354|372|bridgeToggleButton|field|com.bridgemod.chatbridge.gui.BridgeGui|bridgeToggleButton|
+   @|com/bridgemod/chatbridge/gui/BridgeGui.java|386|395|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com/bridgemod/chatbridge/gui/BridgeGui.java|396|406|doneButton|field|com.bridgemod.chatbridge.gui.BridgeGui|doneButton|
+   Method Start: initGui()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|443|450|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|469|476|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|502|512|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|513|518|clear|method|java.util.Collection|clear|()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|624|637|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|638|646|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|647|663|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|666|685|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|697|715|bridgeToggleButton|field|com.bridgemod.chatbridge.gui.BridgeGui|bridgeToggleButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|722|740|BridgeToggleButton|class|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|762|767|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|796|802|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|885|895|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|896|899|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|900|918|bridgeToggleButton|field|com.bridgemod.chatbridge.gui.BridgeGui|bridgeToggleButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|965|975|doneButton|field|com.bridgemod.chatbridge.gui.BridgeGui|doneButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|982|991|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1000|1005|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1021|1027|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1071|1081|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1082|1085|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1086|1096|doneButton|field|com.bridgemod.chatbridge.gui.BridgeGui|doneButton
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1143|1158|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1184|1195|IOException|class|java.io.IOException
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1159|1168|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1169|1175|button|param|com.bridgemod.chatbridge.gui.BridgeGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1210|1216|button|param|com.bridgemod.chatbridge.gui.BridgeGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1217|1219|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1263|1281|bridgeToggleButton|field|com.bridgemod.chatbridge.gui.BridgeGui|bridgeToggleButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1282|1288|toggle|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|toggle|()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1311|1317|button|param|com.bridgemod.chatbridge.gui.BridgeGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1318|1320|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1365|1367|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1368|1384|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: drawScreen(IIF)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1443|1453|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1458|1464|mouseX|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|mouseX|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1470|1476|mouseY|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|mouseY|1
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1484|1496|partialTicks|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|partialTicks|2
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1513|1534|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1581|1599|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1605|1620|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1664|1669|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1680|1686|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1745|1751|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1858|1876|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1882|1897|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1930|1935|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1946|1952|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|1997|2007|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2008|2014|mouseX|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|mouseX|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2016|2022|mouseY|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|mouseY|1
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2024|2036|partialTicks|param|com.bridgemod.chatbridge.gui.BridgeGui|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: keyTyped(CI)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2083|2091|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2128|2139|IOException|class|java.io.IOException
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2097|2106|typedChar|param|com.bridgemod.chatbridge.gui.BridgeGui|keyTyped|(CI)V|typedChar|0
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2112|2119|keyCode|param|com.bridgemod.chatbridge.gui.BridgeGui|keyTyped|(CI)V|keyCode|1
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2154|2161|keyCode|param|com.bridgemod.chatbridge.gui.BridgeGui|keyTyped|(CI)V|keyCode|1
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2165|2173|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2174|2184|KEY_ESCAPE|field|org.lwjgl.input.Keyboard|KEY_ESCAPE
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2205|2207|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2208|2224|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method End: keyTyped(CI)V
+   Method Start: doesGuiPauseGame()Z
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2286|2302|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+   Class Start: com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton
+      @|com/bridgemod/chatbridge/gui/BridgeGui.java|2473|2480|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled|
+      Method Start: BridgeToggleButton(IIIIIZ)V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2506|2524|BridgeToggleButton|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2529|2531|id|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|id|0
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2537|2538|x|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|x|1
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2544|2545|y|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|y|2
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2551|2556|width|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|width|3
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2562|2568|height|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|height|4
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2578|2585|enabled|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|enabled|5
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2607|2609|id|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|id|0
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2611|2612|x|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|x|1
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2614|2615|y|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|y|2
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2617|2622|width|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|width|3
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2624|2630|height|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|height|4
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2654|2661|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2664|2671|enabled|param|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|BridgeToggleButton|(IIIIIZ)V|enabled|5
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2685|2704|updateDisplayString|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|updateDisplayString|()V
+      Method End: BridgeToggleButton(IIIIIZ)V
+      Method Start: toggle()V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2747|2753|toggle|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|toggle|()V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2775|2782|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2791|2798|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2812|2825|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2826|2834|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2835|2851|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2854|2874|setBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|setBridgeChatEnabled|(Z)V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2880|2887|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2902|2921|updateDisplayString|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|updateDisplayString|()V
+      Method End: toggle()V
+      Method Start: updateDisplayString()V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|2965|2984|updateDisplayString|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|updateDisplayString|()V
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|3006|3019|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|3044|3051|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+      Method End: updateDisplayString()V
+      Method Start: isEnabled()Z
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|3113|3122|isEnabled|method|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|isEnabled|()Z
+         @|com/bridgemod/chatbridge/gui/BridgeGui.java|3151|3158|enabled|field|com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton|enabled
+      Method End: isEnabled()Z
+   Class End  : com.bridgemod.chatbridge.gui.BridgeGui.BridgeToggleButton
+Class End  : com.bridgemod.chatbridge.gui.BridgeGui
+endProcessing com/bridgemod/chatbridge/gui/BridgeGui.java
+
+processing com/bridgemod/chatbridge/network/NetworkHandler.java
+@|com/bridgemod/chatbridge/network/NetworkHandler.java|8|40|com.bridgemod.chatbridge.network|package|com.bridgemod.chatbridge.network|(file)
+Class Start: com.bridgemod.chatbridge.network.NetworkHandler
+   @|com/bridgemod/chatbridge/network/NetworkHandler.java|530|534|UUID|class|java.util.UUID
+   @|com/bridgemod/chatbridge/network/NetworkHandler.java|526|529|Set|class|java.util.Set
+   @|com/bridgemod/chatbridge/network/NetworkHandler.java|536|550|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod|
+   @|com/bridgemod/chatbridge/network/NetworkHandler.java|564|581|BridgeChatManager|class|com.bridgemod.chatbridge.chat.BridgeChatManager
+   @|com/bridgemod/chatbridge/network/NetworkHandler.java|582|593|chatManager|field|com.bridgemod.chatbridge.network.NetworkHandler|chatManager|
+   Method Start: NetworkHandler()V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|611|625|NetworkHandler|method|com.bridgemod.chatbridge.network.NetworkHandler|NetworkHandler|()V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|643|657|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|664|671|HashSet|class|java.util.HashSet
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|690|701|chatManager|field|com.bridgemod.chatbridge.network.NetworkHandler|chatManager
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|708|725|BridgeChatManager|class|com.bridgemod.chatbridge.chat.BridgeChatManager
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|737|751|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|752|761|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|762|770|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: NetworkHandler()V
+   Method Start: onClientConnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientConnectedToServerEvent;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|825|840|onClientConnect|method|com.bridgemod.chatbridge.network.NetworkHandler|onClientConnect|(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientConnectedToServerEvent;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|841|885|FMLNetworkEvent.ClientConnectedToServerEvent|class|net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|886|891|event|param|com.bridgemod.chatbridge.network.NetworkHandler|onClientConnect|(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientConnectedToServerEvent;)V|event|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|966|986|broadcastModPresence|method|com.bridgemod.chatbridge.network.NetworkHandler|broadcastModPresence|()V
+   Method End: onClientConnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientConnectedToServerEvent;)V
+   Method Start: onClientDisconnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1037|1055|onClientDisconnect|method|com.bridgemod.chatbridge.network.NetworkHandler|onClientDisconnect|(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1056|1106|FMLNetworkEvent.ClientDisconnectionFromServerEvent|class|net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientDisconnectionFromServerEvent
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1107|1112|event|param|com.bridgemod.chatbridge.network.NetworkHandler|onClientDisconnect|(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V|event|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1124|1138|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1139|1144|clear|method|java.util.Collection|clear|()V
+   Method End: onClientDisconnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V
+   Method Start: broadcastModPresence()V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1175|1195|broadcastModPresence|method|com.bridgemod.chatbridge.network.NetworkHandler|broadcastModPresence|()V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1339|1351|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1361|1370|Minecraft|class|net.minecraft.client.Minecraft
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1371|1383|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1386|1395|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1439|1453|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1454|1457|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1465|1476|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+   Method End: broadcastModPresence()V
+   Method Start: sendBridgeMessage(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1518|1535|sendBridgeMessage|method|com.bridgemod.chatbridge.network.NetworkHandler|sendBridgeMessage|(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1536|1542|String|class|java.lang.String
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1543|1550|message|param|com.bridgemod.chatbridge.network.NetworkHandler|sendBridgeMessage|(Ljava/lang/String;)V|message|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1566|1579|ChatBridgeMod|class|com.bridgemod.chatbridge.ChatBridgeMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1580|1588|instance|field|com.bridgemod.chatbridge.ChatBridgeMod|instance
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1589|1605|getConfigManager|method|com.bridgemod.chatbridge.ChatBridgeMod|getConfigManager|()Lcom/bridgemod/chatbridge/config/ConfigManager;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1608|1627|isBridgeChatEnabled|method|com.bridgemod.chatbridge.config.ConfigManager|isBridgeChatEnabled|()Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1645|1656|chatManager|field|com.bridgemod.chatbridge.network.NetworkHandler|chatManager
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1657|1674|sendBridgeMessage|method|com.bridgemod.chatbridge.chat.BridgeChatManager|sendBridgeMessage|(Ljava/lang/String;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1675|1682|message|param|com.bridgemod.chatbridge.network.NetworkHandler|sendBridgeMessage|(Ljava/lang/String;)V|message|0
+   Method End: sendBridgeMessage(Ljava/lang/String;)V
+   Method Start: hasPlayerMod(Ljava/util/UUID;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1725|1737|hasPlayerMod|method|com.bridgemod.chatbridge.network.NetworkHandler|hasPlayerMod|(Ljava/util/UUID;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1738|1742|UUID|class|java.util.UUID
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1743|1751|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|hasPlayerMod|(Ljava/util/UUID;)Z|playerId|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1770|1784|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1785|1793|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1794|1802|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|hasPlayerMod|(Ljava/util/UUID;)Z|playerId|0
+   Method End: hasPlayerMod(Ljava/util/UUID;)Z
+   Method Start: getPlayersWithMod()Ljava/util/Set;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1837|1854|getPlayersWithMod|method|com.bridgemod.chatbridge.network.NetworkHandler|getPlayersWithMod|()Ljava/util/Set;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1831|1835|UUID|class|java.util.UUID
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1827|1830|Set|class|java.util.Set
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1878|1885|HashSet|class|java.util.HashSet
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1888|1902|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+   Method End: getPlayersWithMod()Ljava/util/Set;
+   Method Start: addPlayerWithMod(Ljava/util/UUID;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1932|1948|addPlayerWithMod|method|com.bridgemod.chatbridge.network.NetworkHandler|addPlayerWithMod|(Ljava/util/UUID;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1949|1953|UUID|class|java.util.UUID
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1954|1962|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|addPlayerWithMod|(Ljava/util/UUID;)V|playerId|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1974|1988|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1989|1992|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|1993|2001|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|addPlayerWithMod|(Ljava/util/UUID;)V|playerId|0
+   Method End: addPlayerWithMod(Ljava/util/UUID;)V
+   Method Start: removePlayerWithMod(Ljava/util/UUID;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2031|2050|removePlayerWithMod|method|com.bridgemod.chatbridge.network.NetworkHandler|removePlayerWithMod|(Ljava/util/UUID;)V
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2051|2055|UUID|class|java.util.UUID
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2056|2064|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|removePlayerWithMod|(Ljava/util/UUID;)V|playerId|0
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2076|2090|playersWithMod|field|com.bridgemod.chatbridge.network.NetworkHandler|playersWithMod
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2091|2097|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2098|2106|playerId|param|com.bridgemod.chatbridge.network.NetworkHandler|removePlayerWithMod|(Ljava/util/UUID;)V|playerId|0
+   Method End: removePlayerWithMod(Ljava/util/UUID;)V
+   Method Start: getChatManager()Lcom/bridgemod/chatbridge/chat/BridgeChatManager;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2149|2163|getChatManager|method|com.bridgemod.chatbridge.network.NetworkHandler|getChatManager|()Lcom/bridgemod/chatbridge/chat/BridgeChatManager;
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2131|2148|BridgeChatManager|class|com.bridgemod.chatbridge.chat.BridgeChatManager
+      @|com/bridgemod/chatbridge/network/NetworkHandler.java|2183|2194|chatManager|field|com.bridgemod.chatbridge.network.NetworkHandler|chatManager
+   Method End: getChatManager()Lcom/bridgemod/chatbridge/chat/BridgeChatManager;
+Class End  : com.bridgemod.chatbridge.network.NetworkHandler
+endProcessing com/bridgemod/chatbridge/network/NetworkHandler.java
+
